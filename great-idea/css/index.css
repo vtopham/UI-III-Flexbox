@@ -212,6 +212,10 @@ address p {
 
 /* style the list of services */
 
+
+ul {
+	list-style-type:square;
+}
 .list-of-services {
 	display: flex;
 	flex-flow: row wrap;
