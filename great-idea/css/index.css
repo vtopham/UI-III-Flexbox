@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,7 +48,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid grey;
 }
 
 html, body {
@@ -74,86 +74,106 @@ h1, h2, h3, h4, h5 {
 body {
 	padding: 20px 5%;
 }
-/*header stuff*/
+
+/* style the header*/
 
 header {
 	padding-bottom: 40px;
 }
 
 header a {
+	display: flex;
 	color:gray;
 	text-decoration: none;
-	margin: 0 3%;
+	align-items:center;
 }
 
 header nav {
-	display:inline-block;
-	width:70%;
-	/* white-space: nowrap; */
+	display:flex;
+	justify-content: space-between;
+
+}
+
+header .links {
+	display: flex;
+	width: 80%;
+	justify-content: space-around;
 }
 
 header .logo {
-	display:inline-block;
-	position:absolute;
-	right:10%;
+	display: flex;
 }
 
-
-
-
-
-
-/*intro styling*/
+/*home page introduction styling*/
 
 .introduction {
-	margin-bottom:40px;
-}
-.introduction div {
-	display:inline-block;
-	width: 40%;
-	margin: 0 4.9%;
-	vertical-align:middle;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-around;
 }
 
-.introduction p {
-	border: 1px solid black;
-	height: 20px;
-	width: 150px;
-	text-align: center; 
-	vertical-align: middle;
-	margin: 0 auto;
+.introduction .title {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	/* TODO: MAKE THIS CENTERED */
 }
+
 
 .introduction h1 {
 	font-size: 5em;
 	text-align: center;
 }
 
+.introduction button {
+	display: flex;
+	border: 1px solid black;
+	height: 30px;
+	width: 150px;
+	align-items: center;
+	justify-content: center;
 
-/* Style the text and the image */
+}
+
+
+/* home page main content stylings */
 
 .middle {
 	padding: 2% 0;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
 }
-.top-row div{
-	width:49%;
-	display:inline-block;
+
+/*top row of text looks good TODO BUT COULD USE SPACE IN BETWEEN*/
+.top-row div {
+	display: flex;
+	flex-direction: column;
+	width:48%;
+}
+.top-row {
+	display: flex;
+	justify-content: space-between; 
 }
 
+/* this is just the middle image */
 .middle img {
 	width: 100%;
 	margin: 3% 0;
 }
 
+/* bottom row of text looks good TODO BUT COULD USE SPACE IN BETWEEN*/
 .bottom-row div {
-	width:30%;
-	margin: 1%;
-	display:inline-block;
+	display: flex;
+	flex-direction: column;
+	width: 32%;
 }
 
-/*style the footer*/
+.bottom-row {
+	display: flex;
+	justify-content: space-between; 
+}
+
+/*------style the footer-----*/
 
 footer {
 	margin-top: 30px;
