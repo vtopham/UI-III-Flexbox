@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -30,9 +30,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -110,6 +108,7 @@ header .logo {
 	margin-bottom: 40px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 
 .introduction .title {
@@ -185,4 +184,93 @@ address p {
 
 .copyright {
 	text-align: center;
+	padding-top: 40px;
+}
+
+/* -----------services page styling----- */
+
+/* style the top services intro */
+
+.services-intro img {
+	width: 100%;
+}
+
+.services-intro-text {
+	/* display: flex;
+	flex-direction: column; */
+
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+	padding-bottom: 40px;
+	border-bottom: 1px solid black;
+}
+
+/* style the list of services */
+
+.list-of-services {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+}
+
+.service-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 48%;
+	height: 250px;
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	background:#F4F3F4;
+	border: 1px solid black;
+
+	justify-content: space-around;
+
+	padding: 2%;
+
+}
+
+.service-container h3 {
+	margin-bottom: 0px;
+}
+
+.learn-more {
+	width: 30%;
+	align-self: flex-start;
+
+	background:white;
+	height: 30px;
+
+	border: 1px solid black;
+	border-radius: 5px;
+}
+/*style the services facts */
+
+.services-some-facts {
+	display:flex;
+/* 
+	width: 48%;
+	justify-content: space-between; */
+
+	padding-top: 40px;
+	border-top: 1px solid black;
+	margin-top: 20px;
+}
+
+.facts-text {
+	display:flex;
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	height: 300px;
+
+}
+
+.facts-text li {
+	line-height: 2;
 }
