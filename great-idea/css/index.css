@@ -47,7 +47,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid grey;
+	/* border: 1px solid grey; */
 }
 
 html, body {
@@ -195,6 +195,10 @@ address p {
 	width: 100%;
 }
 
+.services-intro h1 {
+	font-size: 2em;
+}
+
 .services-intro-text {
 	/* display: flex;
 	flex-direction: column; */
@@ -252,13 +256,15 @@ address p {
 
 .services-some-facts {
 	display:flex;
-/* 
-	width: 48%;
-	justify-content: space-between; */
+
+	width: 48%px;
+	/* justify-content: space-between; */
 
 	padding-top: 40px;
 	border-top: 1px solid black;
 	margin-top: 20px;
+
+	justify-content: space-between;
 }
 
 .facts-text {
@@ -268,9 +274,44 @@ address p {
 	justify-content: space-between;
 
 	height: 300px;
+	width: 400px;
 
 }
 
 .facts-text li {
 	line-height: 2;
+}
+
+
+/* -------vision page styling----------*/
+
+.vision-main-text h2 {
+	font-size: 2em;
+}
+
+.values img {
+	width: 150px;
+	height: 100px;
+	display: flex;
+	margin: 10px;
+}
+
+.value-text {
+	display: flex;
+	flex-direction: column;
+	padding-right: 20px;
+}
+
+.value-container {
+	display: flex;
+	flex-direction: row;
+	margin: 40px;
+	align-items: center;
+	
+}
+
+.values {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
